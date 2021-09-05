@@ -1,0 +1,1111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+:root {
+    --yellow: #f9ca24;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+
+*::selection {
+    background: var(--yellow);
+    color: #333;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+}
+
+body {
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn {
+    padding: .7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i {
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    background: var(--yellow);
+}
+
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
+    color: #fff;
+}
+
+.heading span {
+    color: var(--yellow);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--yellow);
+}
+
+header .user .name {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+header .user .post {
+    font-size: 2rem;
+    color: #eee;
+}
+
+header .navbar {
+    width: 100%;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover {
+    background: var(--yellow);
+}
+
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.home h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.home h1 span {
+    color: var(--yellow);
+}
+
+.home p {
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.about .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3 {
+    font-size: 2rem;
+    color: var(--yellow);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span {
+    color: #eee;
+    padding: 0 .5rem;
+}
+
+.about .row .counter {
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box {
+    width: 20rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.about .row .counter .box span {
+    font-size: 4rem;
+    color: var(--yellow);
+}
+
+.about .row .counter .box h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+/*Education */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 5rem;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: yellow;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+/* Container around content */
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+
+/* The circles on the timeline */
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: grey;
+    border: 4px solid burlywood;
+    top: 5px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* Place the container to the left */
+
+.left {
+    left: 0;
+}
+
+
+/* Place the container to the right */
+
+.right {
+    left: 50%;
+}
+
+
+/* Add arrows to the left container (pointing right) */
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 10px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+
+/* Add arrows to the right container (pointing left) */
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 10px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+
+/* Fix the circle for containers on the right side */
+
+.right::after {
+    left: -13px;
+}
+
+
+/* The actual content */
+
+.edu_content {
+    padding: 10px 30px;
+    top: -10px;
+    background-color: rgb(204, 201, 201);
+    position: relative;
+    border-radius: 8px;
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+    /* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+.education .box-container .box span {
+    font-size: 1.4rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+
+.education .box-container .box h3 {
+    font-size: 2.5rem;
+    color: black;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p {
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i {
+    top: 0rem;
+    left: -7.5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    line-height: 3.1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    z-index: 1;
+    background: rgb(255, 0, 0);
+}
+
+
+/*Alternative Education Section*/
+
+
+/*.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.4rem;
+    background:#222;
+    color:#fff;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 2.5rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.5rem;
+    color:#eee;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--yellow);
+}*/
+
+
+/*Skills*/
+
+.skill {
+    width: 90%;
+    margin: 1rem;
+    color: white;
+}
+
+@keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-webkit-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-moz-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-o-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+.skill h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+
+.bar {
+    background-color: black;
+    padding: 2px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.bar::before {
+    content: attr(data-skill);
+    color: white;
+    background-color: #ff7f50;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 3s 0s;
+    -webkit-animation: load 3s 0s;
+    -moz-animation: load 3s 0s;
+    -o-animation: load 3s 0s;
+}
+
+.bar.python::before {
+    background-color: #ff0000;
+    color: white;
+}
+
+.bar.c::before {
+    background-color: #45B8AC;
+}
+
+.bar.css3::before {
+    background-color: blue;
+}
+
+.bar.java::before {
+    background-color: green;
+}
+
+.bar.js::before {
+    background-color: orange;
+}
+
+.bar.dart::before {
+    background-color: #8b0000;
+}
+
+.bar.mysql::before {
+    background-color: violet;
+}
+
+.bar.learning::before {
+    width: calc(90% - 10px);
+}
+
+.bar.python::before {
+    width: calc(75% - 10px);
+}
+
+.bar.c::before {
+    width: calc(85% - 10px);
+}
+
+.bar.css3::before {
+    width: calc(70% - 10px);
+}
+
+.bar.js::before {
+    width: calc(70% - 10px);
+}
+
+.bar.java::before {
+    width: calc(65% - 10px);
+}
+
+.bar.dart::before {
+    width: calc(87% - 10px);
+}
+
+.bar.mysql::before {
+    width: calc(75% - 10px);
+}
+
+
+/*Content percentage*/
+
+.bar.learning span::after {
+    content: "90%";
+}
+
+.bar.python span::after {
+    content: "75%";
+}
+
+.bar.c span::after {
+    content: "85%";
+}
+
+.bar.css3 span::after {
+    content: "70%";
+}
+
+.bar.js span::after {
+    content: "70%"
+}
+
+.bar.java span::after {
+    content: "65%"
+}
+
+.bar.dart span::after {
+    content: "87%"
+}
+
+.bar.mysql span::after {
+    content: "75%";
+}
+
+
+/*End of Skills*/
+
+
+/*Start of Project*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.mark-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    max-width: 80%;
+}
+
+.h1 .mark-modal-title {
+    background: none;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.mark-modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.mark-modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.mark-modal-header .title {
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+.mark-modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3.25rem;
+    color: white;
+    font-weight: bold;
+}
+
+.mark-modal-body {
+    padding: 10px 15px;
+}
+
+.mark-modal-body img {
+    width: 500px;
+    margin-left: -10px;
+}
+
+.mark-modal-body button {
+    background-color: rgb(0, 161, 0);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.mark-modal button:hover {
+    box-shadow: 0 12px 16px 0 rgb(255, 255, 255), 0 17px 50px 0 rgb(255, 255, 255);
+}
+
+.message-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    max-width: 80%;
+}
+
+.h1 .message-modal-title {
+    background: none;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.message-modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.message-modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.message-modal-header .title {
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+.message-modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3.25rem;
+    color: white;
+    font-weight: bold;
+}
+
+.message-modal-body {
+    padding: 10px 15px;
+}
+
+.message-modal-body img {
+    width: 300px;
+    margin-left: 50px;
+}
+
+.message-modal-body button {
+    background-color: rgb(0, 161, 0);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.message-modal button:hover {
+    box-shadow: 0 12px 16px 0 rgb(255, 255, 255), 0 17px 50px 0 rgb(255, 255, 255);
+}
+
+.study-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    max-width: 80%;
+}
+
+.h1 .study-modal-title {
+    background: none;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.study-modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.study-modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.study-modal-header .title {
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+.study-modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3.25rem;
+    color: white;
+    font-weight: bold;
+}
+
+.study-modal-body {
+    padding: 10px 15px;
+}
+
+.study-modal-body img {
+    width: 350px;
+    margin-left: 50px;
+}
+
+.study-modal-body button {
+    background-color: rgb(0, 161, 0);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.study-modal button:hover {
+    box-shadow: 0 12px 16px 0 rgb(255, 255, 255), 0 17px 50px 0 rgb(255, 255, 255);
+}
+
+.dwitter-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    max-width: 80%;
+}
+
+.h1 .dwitter-modal-title {
+    background: none;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.dwitter-modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.dwitter-modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.dwitter-modal-header .title {
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+.dwitter-modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3.25rem;
+    color: white;
+    font-weight: bold;
+}
+
+.dwitter-modal-body {
+    padding: 10px 15px;
+}
+
+.dwitter-modal-body img {
+    width: 350px;
+    margin-left: 50px;
+}
+
+.dwitter-modal-body button {
+    background-color: rgb(0, 161, 0);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.dwitter-modal button:hover {
+    box-shadow: 0 12px 16px 0 rgb(255, 255, 255), 0 17px 50px 0 rgb(255, 255, 255);
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/*End of Project*/
+
+.project .box-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 10rem;
+}
+
+.project .box-container .box {
+    height: 30rem;
+    width: 36rem;
+    border-radius: 1rem;
+    margin: 4rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project .box-container .h1 h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 2rem 4rem;
+}
+
+.project .box-container .box:hover img {
+    transform: scale(1.2);
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.contact .row form .box::placeholder {
+    text-transform: capitalize;
+}
+
+.contact .row form .message {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i {
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+
+.top {
+    position: fixed;
+    bottom: 7.5rem;
+    right: 2rem;
+    z-index: 100;
+    display: none;
+}
+
+
+/* media queries  */
+
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+    .home {
+        padding: 1rem 4rem;
+    }
+}
+
+@media (max-width:991px) {
+    header {
+        left: -120%;
+    }
+    #menu {
+        display: block;
+    }
+    header.toggle {
+        left: 0%;
+    }
+    body {
+        padding: 0;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:400px) {
+    header {
+        width: 100vw;
+    }
+    .heading {
+        margin: 0 3rem;
+    }
+    .about .row .counter .box {
+        width: 100%;
+    }
+    .education .box-container .box {
+        width: 100%;
+    }
+    .portfolio .box-container .box {
+        width: 100%;
+    }
+    .contact .row form {
+        margin: 3rem 0;
+    }
+}
