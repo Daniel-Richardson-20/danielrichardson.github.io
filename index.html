@@ -1,179 +1,410 @@
+<!-- Toggle Preview - ctrl+shift+v or cmd+shift+v -->
+<!-- Open Preview to the Side - ctrl+k v or cmd+k v -->
+
 <!DOCTYPE html>
-<html>
-<title>Daniel V Richardson (Github Profile)</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
+<html lang="en">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-paper-plane w3-xxlarge"></i>
-        <p>SKILLS</p>
-      </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-download w3-xxlarge"></i>
-    <p>RESUME</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel V Richardson</title>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#skills" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">RESUME</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- font awesome icons fa fa-github-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div class="user">
+            <img src="assets/person.png" alt="">
+            <h3 class="name">Daniel V Richardson</h3>
+            <p class="post">Student, Full Stack Developer</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <h3>HI THERE !</h3>
+        <h1>I'M <span>Daniel V Richardson</span></h1>
+        <p>Hi, I am a student and a programmer part time and Would love to work on some real world projects which includes Android Application Development and some AI/ML Based Python projects.</p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> me </h1>
+
+        <div class="row">
+
+            <div class="info">
+                <h3> <span> name : </span> daniel v richardson </h3>
+                <h3> <span> age : </span> 19 </h3>
+                <h3> <span> qualification : </span>Studying B.E 2nd year</h3>
+                <h3> <span> Want to become : </span> full stack developer </h3>
+                <h3> <span> language : </span> hindi, english, tamil </h3>
+                <a href="http://www.mediafire.com/file/zjihoi8jehnzzb7/Daniel.pdf/file" target="_blank"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+            </div>
+
+            <div class="counter">
+
+                <div class="box">
+                    <span>2+</span>
+                    <h3>years of experience in full stack development</h3>
+                </div>
+
+                <div class="box">
+                    <span>5+</span>
+                    <h3>projects completed</h3>
+                </div>
+
+                <!-- <div class="box">
+            <span>40+</span>
+            <h3>happy students</h3>
+        </div> -->
+
+                <div class="box">
+                    <span>12+</span>
+                    <h3>awards won</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- education section starts  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading"> my <span>education</span> </h1>
+
+        <div class="box-container">
+
+            <div class="timeline">
+                <div class="container left">
+                    <div class="edu_content">
+                        <div class="box">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>2016-2017</span>
+                            <h3>Secondary Education</h3>
+                            <p>I completed my secondary education with an Total of 75% at D.C Lewis Memorial School,Renukoot which was of an ICSE Standard.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="edu_content">
+                        <div class="box">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>2017-2020</span>
+                            <h3>Higher Education</h3>
+                            <p>Completed Diploma in Computer Science & Engineering with an Total of 83% from GEMS Polytechic College, Aurangabad which was under SBTE(State Board of Technical Education)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="edu_content">
+                        <div class="box">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>currently 2021-2023</span>
+                            <h3>Pursuing Graduation</h3>
+                            <p>Currently I am studying in 2nd Year (LE), Computer Science & Engineering from Grace College of Engineering, Mullakadu which is under AnnaUniversity and afflicated to AICTE(All India Council of Technical Education.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternative Education Section -->
+    <!-- <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2016-2017</span>
+        <h3>10th Standard</h3>
+        <p>I completed my 10th Standard with an Total of 75%
+           at D.C Lewis Memorial School,Renukoot which was of an ICSE Standard.
+        </p>
+    </div> 
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2017-2020</span>
+        <h3>Diploma in Computer Science</h3>
+        <p>Completed Diploma with an Total of 83% from GEMS Polytechic College, Aurangabad 
+            which was under SBTE(State Board of Technical Education)
+        </p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>currently 2021-2023</span>
+        <h3>Studying B.E in Computer Science & Engineering</h3>
+        <p>Currently I am studying in 2nd Year (LE) from Grace College of Engineering, Mullakadu which is under AnnaUniversity and afflicated to AICTE(All India Council of Technical Education.</p>
+    </div>
 </div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Daniel V Richardson.</h1>
-    <p>App Developer and Web Designer.</p>
-    <img src="dvr.jpg" alt="@Chaotic_Dan" class="w3-image" width="409" height="1009">
-  </header>
+</section> -->
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Hi, I am Daniel V Richardson Doing my BE in Computer Science and Engineering, 3rd Semester. This is my Github Profile. As a student i have many passion for Programming and Designing. I mostly use Html5,css3 and js for Web Designing and Flutter with DART, java For Android App Development. I studied many Programming Languages like Python, java, C, C++, Visual Basic, Mysql and oracle Database.
-       I love to play Piano And Guitar. And My Hobbies are Singing, Playing Music, Play Football, etc.</p>
+    <!-- education section ends -->
 
-  
-  <!-- Skills Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="skills">
-    <h2 class="w3-text-light-grey">My Skills</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p class="w3-wide">Android App Development (DART, JAVA)</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Web Design (HTML5, CSS3, JS, PHP)</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Machine Learning (PYTHON)</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div>
-    <p class="w3-wide">Windows App Development (JAVA)</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
-    </div>
-    <p class="w3-wide">Embedded Programming (C, C++)</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">29</span><br>
-        Group Projects
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">15</span><br>
-        Standalone Projects 
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">5</span><br>
-        Seminars Conducted
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">22</span><br>
-        Seminars Attended
-      </div>
-    </div>
+    <!-- Skills section Starts -->
 
-  
-</button>
-    <!-- End Grid/Pricing tables -->
-    </div>
-    
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Resume</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <a href="http://www.mediafire.com/file/zjihoi8jehnzzb7/Daniel.pdf/file"><button class="w3-button w3-light-grey w3-padding-large w3-section">
-            <i class="fa fa-download"></i> Download Resume</a>
+    <section class="skills" id="skills">
 
+        <h1 class="heading"> my <span>Skills</span> </h1>
 
-  <!-- End Portfolio Section -->
-  </div>
+        <div class="skill">
+            <h1>Languages</h1>
+            <div class="bar learning" data-skill="HTML5">
+                <span></span>
+            </div>
+            <div class="bar python" data-skill="Python">
+                <span></span>
+            </div>
+            <div class="bar c" data-skill="C/C++">
+                <span></span>
+            </div>
+            <div class="bar css3" data-skill="CSS3">
+                <span></span>
+            </div>
+            <div class="bar java" data-skill="Java">
+                <span></span>
+            </div>
+            <div class="bar js" data-skill="Java Script">
+                <span></span>
+            </div>
+            <div class="bar dart" data-skill="Dart">
+                <span></span>
+            </div>
+            <div class="bar mysql" data-skill="MySql">
+                <span></span>
+            </div>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+        </div>
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chennai, TamilNadu</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 70073 22396</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: danielrichardson20june@gmail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-   <a href="https://www.facebook.com/profile.php?id=100024834722307"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-   <a href="https://www.instagram.com/danielrichardson2001/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-   <a href="https://web.whatsapp.com"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
-   <a href="https://github.com/Daniel-Richardson-2001"><i class="fa fa-github w3-hover-opacity"></i></a>
-   <a href="https://www.linkedin.com/in/daniel-v-richardson-83721b195/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
+        <div class="box-container">
 
 
 
-</div>
+        </div>
+    </section>
+
+
+    <!-- project section starts  -->
+
+    <section class="project" id="project">
+
+        <h1 class="heading"> my <span>projects</span> </h1>
+
+        <div class="box-container">
+
+            <div data-modal-target="#mark-modal" class="box">
+                <img src="assets/chatbot.png" alt="">
+
+            </div>
+            <div class="h1">
+                <button data-modal-target="#mark-modal" class="mark-modal-title">Mark (Covid-19 ChatBot)</button>
+                <div class="mark-modal" id="mark-modal">
+                    <div class="mark-modal-header">
+                        <div class="title">Mark (Covid-19 Chatbot)</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="mark-modal-body">
+                        <img src="assets/chatbot.png">
+                        <a href="workinprogress.html"><button>Source Code</button> </a>
+                        <a href="workinprogress.html"><button>Screenshots</button> </a>
+                        <a href="workinprogress.html "><button>Description</button> </a>
+
+                    </div>
+                </div>
+                <div id="overlay"></div>
+                <!-- <h1>Mark (Covid-19 ChatBot)</h1>-->
+            </div>
+
+            <div data-modal-target="#message-modal" class="box">
+                <img src="assets/chat1.png" alt="">
+            </div>
+
+            <div class="h1">
+
+                <button data-modal-target="#message-modal" class="message-modal-title">Let's Chat (Messenger
+                    App)</button>
+                <div class="message-modal" id="message-modal">
+                    <div class="message-modal-header">
+                        <div class="title">Let's Chat (Messenger App)</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="message-modal-body">
+                        <img src="assets/chat1.png">
+                        <a href="workinprogress.html"><button>Source Code</button> </a>
+                        <a href="workinprogress.html"><button>Screenshots</button> </a>
+                        <a href="workinprogress.html"><button>Description</button> </a>
+
+                    </div>
+                </div>
+                <div id="overlay"></div>
+                <!--   <h1>Let's Chat (Messenger App)</h1>-->
+            </div>
+
+
+            <div data-modal-target="#study-modal" class="box">
+                <img src="assets/studius.png" alt="">
+            </div>
+
+            <div class="h1">
+                <button data-modal-target="#study-modal" class="study-modal-title">Studius (A notes Sharing
+                    App)</button>
+                <div class="study-modal" id="study-modal">
+                    <div class="message-modal-header">
+                        <div class="title">Studius (A notes Sharing App)</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="study-modal-body">
+                        <img src="assets/studius.png">
+                        <a href="workinprogress.html"><button>Source Code</button> </a>
+                        <a href="workinprogress.html"><button>Screenshots</button> </a>
+                        <a href="workinprogress.html"><button>Description</button> </a>
+
+                    </div>
+                </div>
+                <div id="overlay"></div>
+                <!-- <h1>Studius (A notes Sharing App)</h1> -->
+            </div>
+
+
+            <div data-modal-target="#dwitter-modal" class="box">
+                <img src="assets/dwitter_green.png" alt="">
+            </div>
+
+            <div class="h1">
+                <button data-modal-target="#dwitter-modal" class="dwitter-modal-title">Dwitter (clone of
+                    twitter)</button>
+                <div class="dwitter-modal" id="dwitter-modal">
+                    <div class="dwitter-modal-header">
+                        <div class="title">Dwitter (clone of twitter)</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="dwitter-modal-body">
+                        <img src="assets/dwitter_green.png">
+                        <a href="workinprogress.html"><button>Source Code</button> </a>
+                        <a href="workinprogress.html"><button>Screenshots</button> </a>
+                        <a href="workinprogress.html"><button>Description</button> </a>
+
+                    </div>
+                </div>
+                <div id="overlay"></div>
+                <!-- <h1>Dwitter (clone of twitter)</h1> -->
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> danielrichardson20june@gmail.com </h3>
+                    <h3> <i class="fas fa-phone"></i> +91 7007322396 </h3>
+                    <h3><i class="fa fa-github"></i>@Daniel-Richardson-2001
+                    </h3>
+                    <h3><i class="fa fa-twitter"></i>@chaotic_dan17987 </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> chennai, Tamil Nadu </h3>
+                </div>
+
+            </div>
+
+            <form action="">
+
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="text" placeholder="project" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+
+    <!-- scroll top button  -->
+
+    <a href="#home" class="top">
+        <img src="images/scroll-top-img.png" alt="">
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
 
 </body>
+
 </html>
