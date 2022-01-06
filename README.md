@@ -3,6 +3,4 @@
 <h2>
 <a href ="https://daniel-richardson-2001.github.io/danielrichardson.github.io/" target="blank">Click Here</a> 
 <br>
-Thank you for Visiting my Portfolio 😍😍
-
-Please Leave a ⭐ for my Hardwork </h2>
+Thank you for Visiting my Portfolio
